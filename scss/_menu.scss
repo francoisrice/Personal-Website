@@ -59,6 +59,22 @@
 
 	list-style: none;
 
+	.menu-branding {
+		padding: 30px;
+
+		h1 {
+			color: #ddd;
+		}
+
+		.portrait {
+			background: url('../img/headshot.png');
+			background-position: center;
+			border-radius: 150px;
+			width: 175px;
+			height: 175px;
+		}
+	}
+
 	&.show {
 		visibility: visible;
 		@include easeOut;
@@ -93,6 +109,18 @@
 		.btn-line {
 			&.show {
 				background: #000;
+			}
+		}
+	}
+	.menu-nav {
+		.menu-branding {
+			padding: 10px;
+			padding-top: 30px;
+			padding-bottom: 30px;
+
+			.portrait {
+				width: 150px;
+				height: 150px;
 			}
 		}
 	}

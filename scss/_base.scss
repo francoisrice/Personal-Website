@@ -1,3 +1,13 @@
+$text_color: #222;
+$background-color: #ffffff;
+$accent-color: #e2c12e;
+$accent-highlight: #d4b32d;
+$dark-mode: false;
+
+@function dark_mode($dark-mode) {
+	// Change Text, Primary, or Secondary color with boolean
+}
+
 @mixin easeOut {
 	transition: all 0.5s ease-out;
 }
