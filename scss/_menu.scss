@@ -21,8 +21,6 @@
 	z-index: 3;
 	right: 35px;
 	top: 35px;
-	// right: 10px;
-	// top: 50%;
 	cursor: pointer;
 	@include easeOut;
 
@@ -54,16 +52,10 @@
 
 	background-color: #111;
 	overflow-x: hidden;
-	padding-top: 5%; /* Place content 60px from the top */
-	transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+	padding-top: 5%;
+	transition: 0.5s;
 	visibility: hidden;
 	@include easeOut;
-
-	// display: flex;
-	// flex-flow: column wrap;
-	// align-items: center;
-	// justify-content: center;
-	// float: left;
 
 	list-style: none;
 
@@ -73,28 +65,6 @@
 		transform: translate3d(0, -5%, 0);
 		width: 25%;
 	}
-	// .menu-btn {
-	// 	position: absolute;
-	// 	z-index: 3;
-	// 	right: 35px;
-	// 	top: 35px;
-	// 	cursor: pointer;
-	// 	background: #111; /* Black*/
-	// 	// @include easeOut;
-
-	// 	.btn-line {
-	// 		width: 28px;
-	// 		height: 3px;
-	// 		margin: 0 0 5px 0;
-	// 		background: #000;
-	// 		// background: $foreground;
-	// 		// @include easeOut;
-	// 	}
-
-	// &.close {
-	// 	@include close_animation();
-	// }
-	// }
 }
 
 .menu-nav a {
@@ -110,14 +80,22 @@
 	color: #f1f1f1;
 }
 
-// /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-// #main {
-// 	transition: margin-left 0.5s;
-// 	padding: 20px;
-// }
+@media screen and (max-width: 750px) {
+	.menu-btn {
+		right: 10px;
+		top: 50%;
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
+		&.close {
+			right: 32%;
+			@include easeOut;
+		}
+
+		.btn-line {
+			&.show {
+				background: #000;
+			}
+		}
+	}
 	.sidenav {
 		padding-top: 15px;
 	}
