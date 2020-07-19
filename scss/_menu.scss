@@ -32,11 +32,11 @@
 		width: 28px;
 		height: 3px;
 		margin: 0 0 5px 0;
-		background: #000;
+		background: $menu-background-color;
 		@include easeOut;
 
 		&.show {
-			background: #ddd;
+			background: $menu-button-color;
 		}
 	}
 
@@ -54,7 +54,7 @@
 	width: 0%;
 	transform: translate3d(100%, -5%, 0);
 
-	background-color: #111;
+	background-color: $menu-background-color;
 	overflow-x: hidden;
 	padding-top: 5%;
 	transition: 0.5s;
@@ -67,10 +67,12 @@
 		padding: 30px;
 
 		h1 {
-			color: #ddd;
+			color: $menu-button-color;
 		}
 
 		.portrait {
+			// position: inherit;
+			// padding-left: 0;
 			background: url('../img/headshot.png');
 			background-position: center;
 			border-radius: 150px;
@@ -83,7 +85,7 @@
 		visibility: visible;
 		@include easeOut;
 		transform: translate3d(0, -5%, 0);
-		width: 25%;
+		width: 15%;
 	}
 }
 
@@ -91,47 +93,108 @@
 	padding: 8px 8px 8px 32px;
 	text-decoration: none;
 	font-size: 25px;
-	color: #818181;
+	color: $menu-text-color;
 	display: block;
 	transition: 0.3s;
 }
 
 .menu-nav a:hover {
-	color: #f1f1f1;
+	color: $menu-text-highlight;
 }
 
-@media screen and (max-width: 750px) {
+// @media screen and (max-width: 750px) {
+// @media screen and (min-width: 401px) and (max-width: 1444px) {
+// 	.menu-btn {
+// 		right: 10px;
+// 		top: 50%;
+
+// 		&.close {
+// 			right: 32%;
+// 			@include easeOut;
+// 		}
+
+// 		.btn-line {
+// 			&.show {
+// 				background: #000;
+// 			}
+// 		}
+// 	}
+// 	.menu-nav {
+// 		.menu-branding {
+// 			left: 0;
+// 			padding: 10px;
+// 			padding-left: 0px;
+// 			padding-top: 30px;
+// 			padding-bottom: 30px;
+// 			// align-items: center;
+
+// 			.portrait {
+// 				width: 70px;
+// 				height: 70px;
+// 			}
+// 		}
+
+// 		a {
+// 			// padding: 8px 8px 8px 8px;
+// 			padding: 8px;
+// 			padding-right: 30%;
+// 			font-size: 18px;
+// 		}
+
+// 		&.show {
+// 			width: 15%;
+// 		}
+// 	}
+
+// 	h1 {
+// 		font-size: large;
+// 	}
+// )
+
+@media screen and (max-width: 400px) {
 	.menu-btn {
 		right: 10px;
 		top: 50%;
 
 		&.close {
-			right: 32%;
+			right: 42%;
 			@include easeOut;
 		}
 
 		.btn-line {
 			&.show {
-				background: #000;
+				background: $menu-background-color;
 			}
 		}
 	}
 	.menu-nav {
 		.menu-branding {
+			left: 0;
 			padding: 10px;
+			padding-left: 0px;
 			padding-top: 30px;
 			padding-bottom: 30px;
+			// align-items: center;
 
 			.portrait {
-				width: 150px;
-				height: 150px;
+				width: 70px;
+				height: 70px;
 			}
 		}
+
+		a {
+			// padding: 8px 8px 8px 8px;
+			padding: 8px;
+			padding-right: 30%;
+			font-size: 18px;
+		}
+
+		&.show {
+			width: 30%;
+		}
 	}
-	.sidenav {
-		padding-top: 15px;
-	}
-	.sidenav a {
-		font-size: 18px;
+
+	h1 {
+		font-size: large;
 	}
 }

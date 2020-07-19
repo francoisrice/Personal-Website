@@ -7,8 +7,11 @@
 	margin-top: 7%;
 	margin-bottom: 6%;
 	// margin-top: 7%;
-	background: #fff;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	background: $card-background-color;
+	box-shadow: 4px 4px 4px 6px rgba(0, 0, 200, 0.2);
+	// box-shadow: 4px 4px 4px 4px rgba($accent-color, 0.5);
+	// box-shadow: 4px 4px 4px 4px rgba(0, 0, 255, 0.2);
+	// box-shadow: 4px 4px 4px 4px rgba(12, 255, 255, 0.5);
 	transition: 0.6s;
 
 	h2 {
@@ -21,7 +24,7 @@
 }
 
 .navbar {
-	background-color: #333;
+	background-color: $menu-background-color;
 	position: fixed;
 	top: 0px;
 	width: 100%;
@@ -31,14 +34,14 @@
 	a {
 		float: left;
 		display: block;
-		color: white;
+		color: $menu-button-color;
 		text-align: center;
 		padding: 15px;
 		text-decoration: none;
 
 		&:hover {
-			background-color: #ddd;
-			color: black;
+			background-color: $menu-button-color;
+			color: $menu-background-color;
 		}
 	}
 }
@@ -50,6 +53,34 @@ body {
 	margin: 0;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	line-height: 1.5;
+
+	h1 {
+		position: sticky;
+		top: 0;
+		// background: #00006d28;
+		background: #c8c8d9;
+		color: $text-color;
+		// background: $menu-background-color;
+		// color: $accent-color;
+		border-top: 2px $text-color solid;
+		border-bottom: 2px $text-color solid;
+		padding: 1.5rem 2.5rem;
+		padding: 1vh 3vh;
+	}
+
+	.card {
+		padding: 1vh;
+
+		h1,
+		h2,
+		h3 {
+			// color: #007;
+			color: $text-color;
+		}
+		a {
+			color: $accent-color;
+		}
+	}
 }
 
 #contact {
@@ -103,4 +134,10 @@ body {
 	// padding: 1rem;
 	background: darken($color: #333, $amount: 10);
 	color: #eee;
+}
+
+@media screen and (max-width: 400px) {
+	.card {
+		margin-right: 12%;
+	}
 }

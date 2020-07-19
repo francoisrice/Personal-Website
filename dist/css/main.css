@@ -12,7 +12,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #000;
+    background: #333;
     transition: all 0.5s ease-out; }
     .menu-btn .btn-line.show {
       background: #ddd; }
@@ -33,7 +33,7 @@
   z-index: 1;
   width: 0%;
   transform: translate3d(100%, -5%, 0);
-  background-color: #111;
+  background-color: #333;
   overflow-x: hidden;
   padding-top: 5%;
   transition: 0.5s;
@@ -54,47 +54,53 @@
     visibility: visible;
     transition: all 0.5s ease-out;
     transform: translate3d(0, -5%, 0);
-    width: 25%; }
+    width: 15%; }
 
 .menu-nav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #919191;
   display: block;
   transition: 0.3s; }
 
 .menu-nav a:hover {
   color: #f1f1f1; }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 400px) {
   .menu-btn {
     right: 10px;
     top: 50%; }
     .menu-btn.close {
-      right: 32%;
+      right: 42%;
       transition: all 0.5s ease-out; }
     .menu-btn .btn-line.show {
-      background: #000; }
+      background: #333; }
   .menu-nav .menu-branding {
+    left: 0;
     padding: 10px;
+    padding-left: 0px;
     padding-top: 30px;
     padding-bottom: 30px; }
     .menu-nav .menu-branding .portrait {
-      width: 150px;
-      height: 150px; }
-  .sidenav {
-    padding-top: 15px; }
-  .sidenav a {
-    font-size: 18px; } }
+      width: 70px;
+      height: 70px; }
+  .menu-nav a {
+    padding: 8px;
+    padding-right: 30%;
+    font-size: 18px; }
+  .menu-nav.show {
+    width: 30%; }
+  h1 {
+    font-size: large; } }
 
 .card {
   margin: 2%;
   margin-right: 8%;
   margin-top: 7%;
   margin-bottom: 6%;
-  background: #fff;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: #eee;
+  box-shadow: 4px 4px 4px 6px rgba(0, 0, 200, 0.2);
   transition: 0.6s; }
   .card .container {
     padding: 2px 16px; }
@@ -109,21 +115,38 @@
   .navbar a {
     float: left;
     display: block;
-    color: white;
+    color: #ddd;
     text-align: center;
     padding: 15px;
     text-decoration: none; }
     .navbar a:hover {
       background-color: #ddd;
-      color: black; }
+      color: #333; }
 
 body {
-  background: #eeeeee;
+  background: #eee;
   color: #222;
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
+  body h1 {
+    position: sticky;
+    top: 0;
+    background: #c8c8d9;
+    color: #222;
+    border-top: 2px #222 solid;
+    border-bottom: 2px #222 solid;
+    padding: 1.5rem 2.5rem;
+    padding: 1vh 3vh; }
+  body .card {
+    padding: 1vh; }
+    body .card h1,
+    body .card h2,
+    body .card h3 {
+      color: #222; }
+    body .card a {
+      color: #1a87ee; }
 
 #contact .boxes {
   border-radius: 5px;
@@ -152,14 +175,14 @@ body {
     resize: vertical;
     /* Allow the user to vertically resize the textarea (not horizontally) */ }
   #contact .boxes input[type='submit'] {
-    background-color: #e2c12e;
+    background-color: #1a87ee;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer; }
   #contact .boxes input[type='submit']:hover {
-    background-color: #d4b32d; }
+    background-color: #1279ed; }
 
 #main-footer {
   position: relative;
@@ -169,3 +192,7 @@ body {
   text-align: center;
   background: #1a1a1a;
   color: #eee; }
+
+@media screen and (max-width: 400px) {
+  .card {
+    margin-right: 12%; } }
