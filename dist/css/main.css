@@ -67,33 +67,6 @@
 .menu-nav a:hover {
   color: #f1f1f1; }
 
-@media screen and (max-width: 400px) {
-  .menu-btn {
-    right: 10px;
-    top: 50%; }
-    .menu-btn.close {
-      right: 42%;
-      transition: all 0.5s ease-out; }
-    .menu-btn .btn-line.show {
-      background: #333; }
-  .menu-nav .menu-branding {
-    left: 0;
-    padding: 10px;
-    padding-left: 0px;
-    padding-top: 30px;
-    padding-bottom: 30px; }
-    .menu-nav .menu-branding .portrait {
-      width: 70px;
-      height: 70px; }
-  .menu-nav a {
-    padding: 8px;
-    padding-right: 30%;
-    font-size: 18px; }
-  .menu-nav.show {
-    width: 30%; }
-  h1 {
-    font-size: large; } }
-
 .card {
   margin: 2%;
   margin-right: 8%;
@@ -193,6 +166,67 @@ body {
   background: #1a1a1a;
   color: #eee; }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 440px) {
+  .menu-btn {
+    right: 10px;
+    top: 50%; }
+    .menu-btn.close {
+      right: 42%;
+      transition: all 0.5s ease-out; }
+    .menu-btn .btn-line.show {
+      background: #333; }
+  .menu-nav .menu-branding {
+    left: 0;
+    padding: 10px;
+    padding-left: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px; }
+    .menu-nav .menu-branding .portrait {
+      width: 70px;
+      height: 70px; }
+  .menu-nav a {
+    padding: 8px;
+    padding-right: 30%;
+    font-size: 18px; }
+  .menu-nav.show {
+    width: 30%; }
+  h1 {
+    font-size: large; }
   .card {
     margin-right: 12%; } }
+
+@media screen and (min-width: 441px) and (max-width: 910px) {
+  .menu-nav {
+    height: 110%; }
+    .menu-nav .menu-branding {
+      margin-top: 5.5vh;
+      left: 0;
+      padding: 10px;
+      padding-left: 0px;
+      padding-top: 30px;
+      padding-bottom: 30px; }
+      .menu-nav .menu-branding .portrait {
+        width: 100px;
+        height: 100px; }
+    .menu-nav a {
+      padding: 8px;
+      padding-right: 30%; }
+    .menu-nav.show {
+      width: 150px; } }
+
+@media screen and (min-width: 911px) and (max-width: 1300px) {
+  .menu-nav {
+    height: 110%; }
+    .menu-nav .menu-branding {
+      margin-top: 5.5vh;
+      left: 0;
+      padding: 10px;
+      padding-left: 0px;
+      padding-top: 30px;
+      padding-bottom: 30px; }
+      .menu-nav .menu-branding .portrait {
+        width: 100px;
+        height: 100px; }
+    .menu-nav a {
+      padding: 8px;
+      padding-right: 30%; } }
