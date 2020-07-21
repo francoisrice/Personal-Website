@@ -27,7 +27,6 @@
 			padding-left: 0px;
 			padding-top: 30px;
 			padding-bottom: 30px;
-			// align-items: center;
 
 			.portrait {
 				width: 70px;
@@ -36,7 +35,6 @@
 		}
 
 		a {
-			// padding: 8px 8px 8px 8px;
 			padding: 8px;
 			padding-right: 30%;
 			font-size: 18px;
@@ -56,21 +54,6 @@
 	}
 }
 @media screen and (min-width: 441px) and (max-width: 910px) {
-	//     .menu-btn {
-	// 		right: 10px;
-	// 		top: 50%;
-
-	// 		&.close {
-	// 			right: 42%;
-	// 			@include easeOut;
-	// 		}
-
-	// 		.btn-line {
-	// 			&.show {
-	// 				background: $menu-background-color;
-	// 			}
-	// 		}
-	// 	}
 	.home {
 		margin-right: 175px;
 	}
@@ -83,7 +66,6 @@
 			padding-left: 0px;
 			padding-top: 30px;
 			padding-bottom: 30px;
-			// align-items: center;
 
 			.portrait {
 				width: 100px;
@@ -92,25 +74,14 @@
 		}
 
 		a {
-			// padding: 8px 8px 8px 8px;
 			padding: 8px;
 			padding-right: 30%;
-			// font-size: 18px;
 		}
 
 		&.show {
-			// width: 30%;
 			width: 150px;
 		}
 	}
-
-	// 	h1 {
-	// 		font-size: large;
-	// 	}
-
-	// 	.card {
-	// 		margin-right: 12%;
-	// 	}
 }
 @media screen and (min-width: 911px) and (max-width: 1300px) {
 	.menu-nav {
@@ -122,7 +93,6 @@
 			padding-left: 0px;
 			padding-top: 30px;
 			padding-bottom: 30px;
-			// align-items: center;
 
 			.portrait {
 				width: 100px;
@@ -131,14 +101,8 @@
 		}
 
 		a {
-			// padding: 8px 8px 8px 8px;
 			padding: 8px;
 			padding-right: 30%;
-			// font-size: 18px;
-		}
-
-		&.show {
-			// width: 30%;
 		}
 	}
 }
