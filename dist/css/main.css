@@ -119,7 +119,8 @@ body {
     body .card h3 {
       color: #222; }
     body .card a {
-      color: #1a87ee; }
+      color: #1a87ee;
+      text-decoration: none; }
 
 .home {
   margin-right: 15%; }

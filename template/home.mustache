@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="css/main.css" />
+		<title>François Rice</title>
+	</head>
+	<body class="home">
+		<div class="menu">
+			<ul id="mySidenav" class="menu-nav show">
+				<div class="menu-branding show">
+					<a href="home.html" class="nav-link">
+						<img class="portrait" src="img/headshot_bw.png" />
+					</a>
+				</div>
+				<li class="nav-item current show">
+					<a href="home.html" class="nav-link">
+						Home
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="posts.html" class="nav-link">
+						Posts
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="card">
+			<div class="container">
+				<h2><b>Welcome!</b></h2>
+				<p>Hi, I'm François. A web and mobile developer. I focus mostly on coding in React and React Native, with Nodejs or Python backends. This blog shares the knowledge I've gained from my experiences and can hopefully lead you away from the pitfalls that I've fallen into.</p>
+				<a href="posts/welcome.html"><b>Read More</b></a>
+			</div>
+		</div>
+
+		<h1>Latest Posts</h1>
+
+        {{#posts}}
+		<div class="card">
+			<div class="container">
+				{{{title}}}
+				{{{hook_paragraph}}}
+				<a href={{{page_link}}}><b>Read More</b></a>
+			</div>
+		</div>
+        {{/posts}}
+
+		<footer id="main-footer">
+			Copyright &copy; 2020
+		</footer>
+
+		<script src="js/main.js"></script>
+	</body>
+</html>

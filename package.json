@@ -1,14 +1,16 @@
 {
 	"name": "personal-website",
 	"version": "1.0.0",
-	"description": "Responsive website to highlight development skill",
+	"description": "Personal website and repository of knowledge",
 	"main": "index.js",
 	"scripts": {
-		"sass": "node-sass -w scss/ -o dist/css/ --recursive"
+		"sass": "node-sass -w scss/ -o dist/css/ --recursive",
+		"build": "mustache data/postsData.json template/home.mustache > dist/home.html && mustache data/postsData.json template/posts.mustache > dist/posts.html"
 	},
-	"author": "Francois Rice",
+	"author": "François Rice",
 	"license": "ISC",
 	"dependencies": {
+		"mustache": "^4.0.1",
 		"node-sass": "^4.14.1",
 		"showdown": "^1.9.1"
 	},
